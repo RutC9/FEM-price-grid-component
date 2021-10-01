@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site](https://rutc9.github.io/FEM-column-preview-card/)
+- Live Site URL: [Live site](https://rutc9.github.io/FEM-price-grid-component/)
 
 ### Built with
 
