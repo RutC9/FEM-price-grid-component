@@ -1,0 +1,135 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+body {
+  font-size: 16px;
+  background-color: var(--Light-Gray);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 300px;
+  min-width: 300px;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+}
+
+.join-comm {
+  background-color: white;
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.join-comm p {
+  color: var(--Grayish-Blue);
+}
+.join-comm h2 {
+  color: var(--Cyan);
+  font-weight: 700;
+}
+.join-comm h3 {
+  color: var(--Bright-Yellow);
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.signup {
+  background-color: var(--Cyan);
+  color: white;
+  padding: 20px;
+}
+.signup a {
+  background-color: var(--Bright-Yellow);
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 5px 12px 0px rgba(96, 96, 96, 0.33);
+  font-size: 0.9rem;
+}
+.signup b {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-right: 7px;
+}
+.signup p {
+  color: rgba(255, 255, 255, 0.521);
+  display: inline;
+}
+.signup span {
+  display: block;
+  color: rgba(255, 255, 255, 0.76);
+  margin-bottom: 20px;
+}
+.price {
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.signup h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.why-us {
+  background-color: hsla(179, 42%, 48%, 0.712);
+  color: white;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.why-us h2 {
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+li {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.555);
+  line-height: 18px;
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 20px;
+  }
+  .container {
+    display: grid;
+    min-width: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 14px;
+  }
+  .join-comm {
+    padding: 30px;
+    grid-column: 1/3;
+  }
+  .signup {
+    padding: 30px;
+    border-bottom-left-radius: 5px;
+  }
+  .why-us {
+    padding: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    /* line-height: 40px; */
+    font-size: 11px;
+  }
+  .why-us li {
+    margin: 2px 0;
+  }
+}
